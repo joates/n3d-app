@@ -1,6 +1,6 @@
 {
   "name": "n3d-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Scaffolding code to quick-start a node.js + Three.js + WebGL application.",
   "repository": {
     "type": "git",
@@ -11,9 +11,16 @@
     "webgl",
     "threejs"
   ],
+  "dependencies": {
+    "n3d-webgl": "0.0.1"
+  },
   "devDependencies": {
     "tape": "^2.13.3"
   },
+  "scripts": {
+    "build": "browserify app.js -o public/main.js"
+  },
+  "main": "app.js",
   "author": "joates (http://joat.es)",
   "license": "MIT"
 }
